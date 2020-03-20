@@ -10,9 +10,13 @@ def is_valid_input(letter):
     return len(letter) == 1 and letter.lower() in 'abcdefghijklmnopqrstuvwxyz'
 
 
-if __name__ == '__main__':
+def main():
     print(is_valid_input('a'))  # True
     print(is_valid_input('A'))  # True
-    print(is_valid_input('$'))   # False
-    print(is_valid_input("ab"))   # False
-    print(is_valid_input("app$"))  #False
+    print(is_valid_input('$'))  # False
+    print(is_valid_input("ab"))  # False
+    print(is_valid_input("app$"))  # False
+
+
+if __name__ == '__main__':
+    main()
